@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap');
+
+// Set your brand colors
+$primary: #FA990D;
+$dark: #000000;
+$light: #FFFFFF;
+
+// Update Bulma's global variables
+$family-sans-serif: "Poppins", sans-serif;
+$link: $primary;
+
+
+$hero-flex: row;
+
+// Update some of Bulma's component variables
+$control-border-width: 11px;
+
+// Import only what you need from Bulma
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/layout/hero.sass";
+@import "../node_modules/bulma/sass/layout/section.sass";

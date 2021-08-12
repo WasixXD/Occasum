@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width,initial-scale=1'>
+
+        
+        <title>Occasum</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        
+        <link rel="stylesheet" href="./css/global.css">
+        <style>
+            .small {
+                width: 23rem;
+                font-size: 3rem;
+                
+            }
+            .small p {
+                line-height: 126%;
+            }
+
+            .author {
+                width: 100%;
+                height: 25%;
+                border: 1px solid black;
+                border-radius: .2rem;
+            }
+            .date {
+                width: 100%;
+                border: 1px solid black;
+                border-radius: .2rem;
+
+            }
+
+            textarea {
+               
+                resize: vertical;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <section class="hero ">
+            <div class="container is-flex is-flex-direction-row is-flex-wrap-wrap is-align-self-center is-align-items-center">
+                <div class="container is-align-items-center mr-6">
+
+
+                    <a href="./" ><i class="fas fa-long-arrow-alt-left is-size-1 "></i></a>
+                    <h1 class="is-size-1 has-text-weight-semibold mb-4">Share your photos</h1>
+                    <div class="block small">
+                        <p class="is-size-4 has-text-weight-medium">You don't need to register, we just need information for the photo and that's it!</p>
+                    </div>
+
+                    <figure class="image is-square">
+                        <img src="./img/undraw_Photos_re_pvh3.svg" alt="photos">
+                    </figure>
+                </div>
+
+
+                <div class="container is-align-self-center ">
+                    <form action="/post" method="POST" enctype="multipart/form-data">
+                        <div class="field">
+                            <label for="author" class="label my-2">Author</label>
+                            <div class="control">
+                                <input type="text" class="author is-medium" name="author" id="author">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="date" class="label">Date</label>
+                            <div class="control">
+                                <input type="date" class="date" name="date" id="date">
+                            </div>
+                        </div>
+
+                        <label for="subtitle" class="label">Photo</label>
+                        <div class="file is-primary my-2">
+                            <label class="file-label">
+                              <input class="file-input" type="file" name="photo" >
+                              <span class="file-cta">
+                                <span class="file-icon">
+                                  <i class="fas fa-upload"></i>
+                                </span>
+                                <span class="file-label">
+                                  Upload a Photo
+                                </span>
+                              </span>
+                            </label>
+                          </div>
+
+                        <div class="field">
+                            <label for="subtitle" class="label">Subtitle</label>
+                            <div class="control">
+                                <textarea name="subtitle" class="author p-3" cols="30" rows="10" ></textarea>
+                            </div>
+                        </div>
+                        <button class="button is-primary is-fullwidth has-text-centered mt-6">
+                            SUBMIT
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+        
+    </body>
+</html>
