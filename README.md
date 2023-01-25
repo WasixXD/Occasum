@@ -1,6 +1,6 @@
 # Occasum
 ## A social network for sunset 🌅
-[Link for the project](https://occasum.herokuapp.com/) (may have fallen due to heroku timeouts)<br>
+
 [Link for Figma Design](https://www.figma.com/community/file/1007727681972409058) <br>
 <img src="https://github.com/WasixXD/Occasum/blob/main/occasum/public/img/Sun_Flatline.png" />
 
