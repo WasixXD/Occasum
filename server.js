@@ -7,7 +7,7 @@ const cors = require('cors')
 const PORT = process.env.PORT || 3000
 const PATH = __dirname + "/occasum/public/"
 
-app.use(cors())
+app.use(cors({origin: "*"}))
 app.use(express.static(__dirname + "/occasum/public/"))
 app.use(express.urlencoded({extended: true}))
 
