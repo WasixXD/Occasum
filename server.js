@@ -43,6 +43,4 @@ app.get("/img/", router, (req, res) => {
     res.json(res.response)
 })
 
-app.listen(PORT, () => {
-    console.log("Server in on => http://localhost:"+PORT)
-})
+app.listen(PORT)
