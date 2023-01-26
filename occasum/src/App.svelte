@@ -6,7 +6,7 @@
     let result
     async function getContent() {
 
-        let url = "https://occasum.herokuapp.com/img"
+        let url = "https://not-occasum.onrender.com/img"
         let response = await fetch(url)
         result  = await response.json()
         
